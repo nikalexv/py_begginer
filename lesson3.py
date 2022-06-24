@@ -9,7 +9,7 @@ def LevenshteinDistance(s, t):
         for j in range(n):
             deletionCost = v0[j+1] + 1
             insertionCost = v1[j] + 1
-            if s[i] == t[i]:
+            if s[i] == t[j]:
                 substitutionCost = v0[j]
             else:
                 substitutionCost = v0[j] + 1
